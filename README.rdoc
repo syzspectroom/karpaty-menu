@@ -1,3 +1,18 @@
 = KarpatyMenu
 
 This project rocks and uses MIT-LICENSE.
+
+Usage
+
+1. Gemfile
+gem "karpaty_menu", git: "git@bitbucket.org:webmilTeam/karpaty_menu.git", branch: 'master'
+
+2. application.scss
+@import 'karpaty_menu/menu_burger';
+@import 'karpaty_menu/main_menu';
+
+3. application.js
+//= require "karpaty_menu/menu"
+
+4. template.haml
+= render 'karpaty_menu/main_menu'
