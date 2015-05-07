@@ -1,0 +1,24 @@
+ru:
+  karpaty_menu:
+    main_menu:
+      menu: "Меню"
+      search: "Поиск"
+
+      regions_guide: "Гид регионами"
+      home: "Главная"
+      rest_categories: "Категории отдыха"
+      regions: "Районы/Локации"
+      objects: "Объекты"
+
+      events_calendar: "Календарь событий"
+      events: "События"
+      archive: "Архив событий"
+      new_event: "Добавить событие"
+
+      booking: "Бронирование"
+      apts_catalog: "Каталог жилья"
+      add_apts: "Добавить жилье"
+
+      about_us: "О Karpaty.UA"
+      contact_info: "Контактная информация"
+      about_advertising: "Реклама на сайте"

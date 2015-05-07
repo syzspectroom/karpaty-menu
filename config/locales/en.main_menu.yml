@@ -1,0 +1,24 @@
+en:
+  karpaty_menu:
+    main_menu:
+      menu: "Menu"
+      search: "Search"
+
+      regions_guide: "Regions guide"
+      home: "Home"
+      rest_categories: "Rest categories"
+      regions: "Regions/Locations"
+      objects: "Objects"
+
+      events_calendar: "Calendar of events"
+      events: "Events"
+      archive: "Archive of events"
+      new_event: "Add event"
+
+      booking: "Booking"
+      apts_catalog: "Catalog of accommodations"
+      add_apts: "Add accommodation"
+
+      about_us: "About Karpaty.UA"
+      contact_info: "Contacts"
+      about_advertising: "Advertising"

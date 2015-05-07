@@ -1,0 +1,45 @@
+%a.menu-burger.js-menu-toggler{href: '#'}
+  .menu-burger__name= t('.menu')
+  %span.line
+
+.main-menu__page-overlay.js-menu-page-overlay
+
+.main-menu__wrapper.js-main-menu
+  .main-menu__scrollable
+
+    %nav.main-menu
+
+      .main-menu__category
+        %a.main-menu__category-name-empty{href: loc_url(ENV['MAIN_DOMAIN_NAME']), data:{hover: 'Karpaty.ua'}} Karpaty.ua
+
+
+      .main-menu__category.js-menu-category{class: menu_category_class(ENV['GUIDE_DOMAIN_NAME']) }
+        %a.main-menu__category-name.js-menu-category-name{href: loc_url(ENV['GUIDE_DOMAIN_NAME']), data:{hover: t('.regions_guide')}}= t('.regions_guide')
+        .main-menu__items-container
+          %a.main-menu__item{href: loc_url(ENV['GUIDE_DOMAIN_NAME']), class: menu_item_class(ENV['GUIDE_DOMAIN_NAME'], '', true), data:{hover: t('.home')}}= t('.home')
+          %a.main-menu__item{href: loc_url(ENV['GUIDE_DOMAIN_NAME'], '/categories'), class: menu_item_class(ENV['GUIDE_DOMAIN_NAME'], '/categories'), data:{hover: t('.rest_categories')}}= t('.rest_categories')
+          %a.main-menu__item{href: loc_url(ENV['GUIDE_DOMAIN_NAME'], '/locations'), class: menu_item_class(ENV['GUIDE_DOMAIN_NAME'], '/locations'), data:{hover: t('.regions')}}= t('.regions')
+          %a.main-menu__item{href: loc_url(ENV['GUIDE_DOMAIN_NAME'], '/places'), class: menu_item_class(ENV['GUIDE_DOMAIN_NAME'], '/places'), data:{hover: t('.objects')}}= t('.objects')
+
+
+      .main-menu__category.js-menu-category{class: menu_category_class(ENV['CALENDAR_DOMAIN_NAME']) }
+        %a.main-menu__category-name.js-menu-category-name{href: loc_url(ENV['CALENDAR_DOMAIN_NAME']), data:{hover: t('.events_calendar')}}= t('.events_calendar')
+        .main-menu__items-container
+          %a.main-menu__item{href: loc_url(ENV['CALENDAR_DOMAIN_NAME']), class: menu_item_class(ENV['CALENDAR_DOMAIN_NAME'], '', true), data:{hover: t('.home')}}= t('.home')
+          %a.main-menu__item{href: loc_url(ENV['CALENDAR_DOMAIN_NAME'], '/events'), class: menu_item_class(ENV['CALENDAR_DOMAIN_NAME'], '/events', true), data:{hover: t('.events')}}= t('.events')
+          %a.main-menu__item{href: loc_url(ENV['CALENDAR_DOMAIN_NAME'], '/events/archive'), class: menu_item_class(ENV['CALENDAR_DOMAIN_NAME'], '/events/archive'), data:{hover: t('.archive')}}= t('.archive')
+          %a.main-menu__item{href: loc_url(ENV['CALENDAR_DOMAIN_NAME'], '/events/new'), class: menu_item_class(ENV['CALENDAR_DOMAIN_NAME'], '/events/new'), data:{hover: t('.new_event')}}= t('.new_event')
+
+
+      -#.main-menu__category.js-menu-category{class: menu_category_class(ENV['BOOKING_DOMAIN_NAME']) }
+      -#  %a.main-menu__category-name.js-menu-category-name{href: loc_url(ENV['BOOKING_DOMAIN_NAME']), data:{hover: t('.booking')}}= t('.booking')
+      -#  .main-menu__items-container
+      -#    %a.main-menu__item{href: loc_url(ENV['BOOKING_DOMAIN_NAME']), class: menu_item_class(ENV['BOOKING_DOMAIN_NAME'], '', true), data:{hover: t('.home')}}= t('.home')
+      -#    %a.main-menu__item{href: '#', data:{hover: t('.apts_catalog')}}= t('.apts_catalog')
+      -#    %a.main-menu__item{href: '#', data:{hover: t('.add_apts')}}= t('.add_apts')
+
+
+    .main-menu__useful
+      %a.main-menu__useful-item{href: loc_url(ENV['MAIN_DOMAIN_NAME'], '/about_us'), class: menu_item_class(ENV['MAIN_DOMAIN_NAME'], '/about_us'), data:{hover: t('.about_us')}}= t('.about_us')
+      %a.main-menu__useful-item{href: loc_url(ENV['MAIN_DOMAIN_NAME'], '/contacts'), class: menu_item_class(ENV['MAIN_DOMAIN_NAME'], '/contacts'), data:{hover: t('.contact_info')}}= t('.contact_info')
+      %a.main-menu__useful-item{href: loc_url(ENV['MAIN_DOMAIN_NAME'], '/advertising'), class: menu_item_class(ENV['MAIN_DOMAIN_NAME'], '/advertising'), data:{hover: t('.about_advertising')}}= t('.about_advertising')

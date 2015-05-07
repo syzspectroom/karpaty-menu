@@ -1,0 +1,198 @@
+.overflow-hidden { overflow: hidden; }
+
+.main-menu__page-overlay {
+  position: fixed;
+  width: 0;
+  height: 0;
+  background: rgba(10, 10, 10, 0);
+  z-index: 990;
+  @include transition( background 0.3s ease );
+  &.active {
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 10, 10, 0.39);
+  }
+}
+
+.main-menu__wrapper {
+  position: fixed;
+  overflow: auto;
+  background: #1c1c1d;
+  @include box-sizing(border-box);
+  width: 360px;
+  height: 100%;
+  top: 0;
+  z-index: 1000;
+  @include transition( all 0.3s ease );
+  left: 0;
+  -webkit-transform: translateZ(0px);
+  @include translateX(-360px);
+  // -webkit-overflow-scrolling:touch;
+  &.active {
+    @include translateX(0);
+    box-shadow: 3px 0px 8px 0px rgba(0, 0, 0, 0.56)
+  }
+}
+
+//  fallback for IE8
+html.no-csstransforms {
+  .main-menu__wrapper {
+    left: -360px;
+    &.active { left: 0px; }
+  }
+}
+
+.main-menu__scrollable {
+  min-height: 100%;
+  position: relative;
+}
+
+
+
+
+
+// .main-menu__search {
+//   padding-top: 60px;
+//   position: relative;
+//   width: 100%;
+//
+//   &:after {
+//     content: '';
+//     position: absolute;
+//     right: 0;
+//     top: 61px;
+//     display: block;
+//     width: 50px;
+//     height: 50px;
+//     background: inline-image('search-field-ico.png') no-repeat;
+//   }
+// }
+
+  // .main-menu__search-input.main-menu__search-input {
+  //   width: 100%;
+  //   height: 50px;
+  //   display: block;
+  //   border: none;
+  //   border-top: 1px solid #4a5456;
+  //   border-bottom: 1px solid #4a5456;
+  //   @include box-sizing(border-box);
+  //   background: #1c1c1d;
+  //   color: #babbbb;
+  //   padding: 0 50px;
+  //   font-size: pem(16);
+  //   font-family: $heading-font;
+  //   @include transition(all 0.3s);
+  //   -webkit-appearance: none;
+  //   @include border-radius(0);
+  //   &:focus {
+  //     background-color: #171718;
+  //   }
+  // }
+
+%main-menu__link {
+  display: block;
+  position: relative;
+  font-family: $heading-font;
+  @include scale(line-height, 52, 30);
+  color: #4a5456;
+  text-decoration: none;
+  white-space: nowrap;
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    max-width: 0;
+    color: #babbbb;
+    content: attr(data-hover);
+    @include transition(max-width 0.3s);
+  }
+  &:hover,
+  &.active {
+    &::before { max-width: 100%; }
+  }
+}
+
+.main-menu {
+  // margin-top: 35px;
+  padding: 60px 10px 150px 50px;
+}
+
+  .main-menu__category {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    &.active {
+      .main-menu__category-name {
+        color: #babbbb;
+      }
+    }
+
+    &.opened {
+      .main-menu__category-name {
+        color: #babbbb;
+        &:before {
+          display: none;
+        }
+        &:after {
+          background-position: 0 -12px;
+        }
+      }
+      .main-menu__items-container{
+        max-height: 180px;
+      }
+    }
+  }
+
+    .main-menu__category-name {
+      @extend %main-menu__link;
+      @include scale(font-size, 30);
+      &:focus { outline: 0; }
+      &:after {
+        content: '';
+        position: absolute;
+        left: -25px;
+        top: 50%;
+        margin-top: -6px;
+        display: block;
+        width: 12px;
+        height: 12px;
+        background: inline-image('menu-ico.png') no-repeat;
+        @include transition(all 0.3s);
+      }
+    }
+    .main-menu__category-name-empty {
+      @extend .main-menu__category-name;
+      &:after { display: none; }
+    }
+
+    .main-menu__items-container {
+      @include scale(padding-left, 20);
+      overflow-y: hidden;
+      max-height: 0;
+      @include transition(all 0.5s ease-out);
+      -webkit-transform: translate3d(0,0,0);
+      transform: translate3d(0,0,0);
+    }
+
+      .main-menu__item {
+        @extend %main-menu__link;
+        @include scale(font-size, 18, 16);
+        @include scale(line-height, 40, 16);
+      }
+
+
+
+
+
+
+.main-menu__useful {
+  position: absolute;
+  bottom: 30px;
+  left: 50px;
+  padding: 0;
+  width: 300px;
+}
+  .main-menu__useful-item {
+    @extend %main-menu__link;
+    font-size: pem(18);
+  }
