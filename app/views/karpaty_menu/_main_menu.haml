@@ -31,12 +31,13 @@
           %a.main-menu__item{href: loc_url(ENV['CALENDAR_DOMAIN_NAME'], '/events/new'), class: menu_item_class(ENV['CALENDAR_DOMAIN_NAME'], '/events/new'), data:{hover: t('.new_event')}}= t('.new_event')
 
 
-      -#.main-menu__category.js-menu-category{class: menu_category_class(ENV['BOOKING_DOMAIN_NAME']) }
-      -#  %a.main-menu__category-name.js-menu-category-name{href: loc_url(ENV['BOOKING_DOMAIN_NAME']), data:{hover: t('.booking')}}= t('.booking')
-      -#  .main-menu__items-container
-      -#    %a.main-menu__item{href: loc_url(ENV['BOOKING_DOMAIN_NAME']), class: menu_item_class(ENV['BOOKING_DOMAIN_NAME'], '', true), data:{hover: t('.home')}}= t('.home')
-      -#    %a.main-menu__item{href: '#', data:{hover: t('.apts_catalog')}}= t('.apts_catalog')
-      -#    %a.main-menu__item{href: '#', data:{hover: t('.add_apts')}}= t('.add_apts')
+      .main-menu__category.js-menu-category{class: menu_category_class(ENV['BOOKING_DOMAIN_NAME']) }
+        %a.main-menu__category-name.js-menu-category-name{href: loc_url(ENV['BOOKING_DOMAIN_NAME']), data:{hover: t('.booking')}}= t('.booking')
+        .main-menu__items-container
+          %a.main-menu__item{href: loc_url(ENV['BOOKING_DOMAIN_NAME']), class: menu_item_class(ENV['BOOKING_DOMAIN_NAME'], '', true), data:{hover: t('.home')}}= t('.home')
+          %a.main-menu__item{href: loc_url(ENV['BOOKING_DOMAIN_NAME'], '/houses'), class: menu_item_class(ENV['BOOKING_DOMAIN_NAME'], '/houses'), data:{hover: t('.apts_catalog')}}= t('.apts_catalog')
+          %a.main-menu__item{href: loc_url(ENV['BOOKING_DOMAIN_NAME'], '/houses#add-apartment'), data:{hover: t('.add_apts')}}= t('.add_apts')
+
 
 
     .main-menu__useful
