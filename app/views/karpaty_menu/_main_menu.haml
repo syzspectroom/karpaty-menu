@@ -44,4 +44,4 @@
       %a.main-menu__useful-item{href: "//#{ENV['BLOG_DOMAIN_NAME']}", data:{hover: t('.blog')}}= t('.blog')
       %a.main-menu__useful-item{href: loc_url(ENV['MAIN_DOMAIN_NAME'], '/about_us'), class: menu_item_class(ENV['MAIN_DOMAIN_NAME'], '/about_us'), data:{hover: t('.about_us')}}= t('.about_us')
       %a.main-menu__useful-item{href: loc_url(ENV['MAIN_DOMAIN_NAME'], '/contacts'), class: menu_item_class(ENV['MAIN_DOMAIN_NAME'], '/contacts'), data:{hover: t('.contact_info')}}= t('.contact_info')
-      %a.main-menu__useful-item.main-menu__useful-item--morosha{href: loc_url(ENV['GUIDE_DOMAIN_NAME'], '/static/morosha')}= t('main_menu.morosha')
+      %a.main-menu__useful-item.main-menu__useful-item--morosha{href: loc_url(ENV['GUIDE_DOMAIN_NAME'], '/static/morosha')}= raw t('.morosha')
