@@ -196,3 +196,27 @@ html.no-csstransforms {
     @extend %main-menu__link;
     font-size: pem(18);
   }
+
+  .main-menu__useful-item--morosha {
+    position: relative;
+    padding-left: 89px;
+
+    &:after {
+      content: "";
+      background: image-url('morosha-main-menu-footer.png') no-repeat left center;
+      opacity: 0.5;
+      width: 89px;
+      height: 100%;
+      top: 0;
+      left: 0;
+      position: absolute;
+      z-index: -1;
+    }
+
+    &:hover{
+      color: #babbbb;
+      &:after {
+        opacity: 1;
+      }
+    }
+  }
