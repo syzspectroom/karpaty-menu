@@ -26,10 +26,10 @@
   @include transition( all 0.3s ease );
   left: 0;
   -webkit-transform: translateZ(0px);
-  @include translateX(-360px);
+  @include translate(-360px, 0);
   // -webkit-overflow-scrolling:touch;
   &.active {
-    @include translateX(0);
+    @include translate(0, 0);
     box-shadow: 3px 0px 8px 0px rgba(0, 0, 0, 0.56)
   }
 }
@@ -220,3 +220,14 @@ html.no-csstransforms {
       }
     }
   }
+
+@media all and (max-width: 1024px) {
+  .main-menu__wrapper {
+    @include transform(translate(none));
+    left: -360px;
+  }
+  .main-menu__wrapper.active {
+    @include transform(translate(none));
+    left: 0px;
+  }
+}
