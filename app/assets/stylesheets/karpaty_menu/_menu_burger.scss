@@ -25,14 +25,14 @@
   }
 
   &:before {
-    @include transform(translate(0, 18px));
+    @include transform(translate(0, 17px));
   }
 
   &:after {
     @include transform(translate(0, 32px));
   }
   .line {
-    @include transform(translate(0, 24px));
+    @include transform(translate(0, 25px));
     @include transition(opacity 0.1s);
   }
   &.active {
@@ -40,10 +40,10 @@
     position: fixed;
     .line { opacity: 0; }
     &:before {
-      @include transform(translate(0, 24px) rotate(45deg));
+      @include transform(translate(0, 25px) rotate(45deg));
     }
     &:after {
-      @include transform(translate(0, 24px) rotate(-45deg));
+      @include transform(translate(0, 25px) rotate(-45deg));
     }
   }
 }
