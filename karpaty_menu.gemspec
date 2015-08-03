@@ -7,11 +7,11 @@ require "karpaty_menu/version"
 Gem::Specification.new do |s|
   s.name        = "karpaty_menu"
   s.version     = KarpatyMenu::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of KarpatyMenu."
-  s.description = "TODO: Description of KarpatyMenu."
+  s.authors     = ["Rostyslav Diachok"]
+  s.email       = ["infernalmaster1@gmail.com"]
+  s.homepage    = "karpaty.ua"
+  s.summary     = "menu"
+  s.description = "Menu for karpaty.ua"
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
