@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.version     = KarpatyMenu::VERSION
   s.authors     = ["Rostyslav Diachok"]
   s.email       = ["infernalmaster1@gmail.com"]
-  s.homepage    = "karpaty.ua"
+  s.homepage    = "http://karpaty.ua"
   s.summary     = "menu"
   s.description = "Menu for karpaty.ua"
   s.license     = "MIT"
