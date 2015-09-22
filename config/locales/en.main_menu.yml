@@ -18,6 +18,9 @@ en:
       booking: "Booking"
       apts_catalog: "Catalog of accommodations"
       add_apts: "Add accommodation"
+      order: "Online booking"
+      categories: "Categories"
+      routes: "Regions"
 
       about_us: "About Karpaty.UA"
       contact_info: "Contacts"

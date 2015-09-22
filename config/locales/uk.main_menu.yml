@@ -18,6 +18,10 @@ uk:
       booking: "Бронювання житла"
       apts_catalog: "Каталог житла"
       add_apts: "Додати житло"
+      order: "Бронювати онлайн"
+      categories: "Категорії"
+      routes: "Регіони"
+
 
       about_us: "Про Karpaty.UA"
       contact_info: "Контактна інформація"

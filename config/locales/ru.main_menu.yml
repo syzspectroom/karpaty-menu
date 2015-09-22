@@ -18,6 +18,9 @@ ru:
       booking: "Бронирование"
       apts_catalog: "Каталог жилья"
       add_apts: "Добавить жилье"
+      order: "Бронировать онлайн"
+      categories: "Категории"
+      routes: "Регионы"
 
       about_us: "О Karpaty.UA"
       contact_info: "Контактная информация"

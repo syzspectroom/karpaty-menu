@@ -2,11 +2,11 @@
   display: block;
   width: 50px;
   height: 50px;
-  position: absolute;
+  position: fixed;
   top: 2px;
   left: 2px;
   background: #000;
-  z-index: 1001;
+  z-index: 2002;
   @include transition(all 0.3s);
   @include box-sizing(border-box);
   &:focus { outline: 0; }
@@ -35,16 +35,18 @@
     @include transform(translate(0, 25px));
     @include transition(opacity 0.1s);
   }
-  &.active {
-    background: #1c1c1d;
-    position: fixed;
-    .line { opacity: 0; }
-    &:before {
-      @include transform(translate(0, 25px) rotate(45deg));
-    }
-    &:after {
-      @include transform(translate(0, 25px) rotate(-45deg));
-    }
+}
+
+
+.show-menu .menu-burger {
+  background: #1c1c1d;
+  position: fixed;
+  .line { @include opacity(0); }
+  &:before {
+    @include transform(translate(0, 25px) rotate(45deg));
+  }
+  &:after {
+    @include transform(translate(0, 25px) rotate(-45deg));
   }
 }
 
@@ -55,6 +57,12 @@
   position: absolute;
   left: 60px;
   line-height: 50px;
+  &:hover {
+    text-decoration: underline;
+  }
+  &.hidden {
+    display: none;
+  }
 }
 
 @media all and (max-width: 400px) {
