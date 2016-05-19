@@ -4,19 +4,19 @@ en:
       menu: "Menu"
       search: "Search"
 
-      regions_guide: "Regions guide"
+      regions_guide: "Guide"
       home: "Home"
       rest_categories: "Rest categories"
       regions: "Regions/Locations"
       objects: "Objects"
 
-      events_calendar: "Calendar of events"
+      events_calendar: "Events calendar"
       events: "Events"
-      archive: "Archive of events"
+      archive: "Events archive"
       new_event: "Add event"
 
       booking: "Booking"
-      apts_catalog: "Catalog of accommodations"
+      apts_catalog: "Catalogue"
       add_apts: "Add accommodation"
       order: "Online booking"
       categories: "Categories"
