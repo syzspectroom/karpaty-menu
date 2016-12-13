@@ -1,71 +1,25 @@
 en:
-  main_menu:
-    menu: "Menu"
-    search: "Search"
-
-    regions_guide: "Guide"
-    home: "Home"
-    rest_categories: "Rest categories"
-    regions: "Regions/Locations"
-    objects: "Objects"
-
-    events_calendar: "Events calendar"
-    events: "Events"
-    archive: "Events archive"
-    new_event: "Add event"
-
-    booking: "Booking"
-    apts_catalog: "Catalogue"
-    add_apts: "Add accommodations"
-    order: "Online booking"
-    categories: "Categories"
-    routes: "Regions"
-
-    about_us: "About Karpaty.UA"
-    contact_info: "Contacts"
-    about_advertising: "Advertising"
-    blog: "Blog"
-
-  seo:
-    title: "Karpaty.ua — apartment, events, sightseeings"
-    description: "Here you'll find: accommodation offers, list of sightseeings and events worth visiting"
-    keywords: "rest in the Carpathians Carpathians, accommodation, entertainment, sightseeings"
-
-
-  page:
-    title: "KARPATY.UA"
-
-    main_text:
-      s1: "Plan your trip: find"
-      s2: "place"
-      s3: "and"
-      s4: "events"
-      s5: " worth a visit, book"
-      s6: "accommodation"
-      s7: "у&nbsp;in the Carpathians and fill your day with new experience! Carpathians &nbsp;&mdash; are limitless but we will help you to find the most interesting things for every your trip!"
-
-    events: "Events"
-    houses: "accommodation"
-    objects: "Objects"
-
-
-    search_everywhere: "search everywhere"
-    regions: "regions"
-
-    placeholders:
-      all: "search Kvasy, Palanok castle or festival «Tu stan'!»"
-      houses: "search Yaremche, Verkhovyna"
-      events: "search festival Chervne vyno"('Red Wine')"
-      objects: "search Trufanets' waterfall"
-
-
-    hins:
-      all: " Choose the best time and place for rest."
-      houses: "Book an accommodation and know more about the place where you will live"
-      events: "Visit the traditional celebrations, festivals and trade fairs"
-      objects: "Visit the Carpathian castles, see the high mountains and sounding waterfalls!"
-
-    low_labels:
-      houses: "Town/Village"
-      events: "Event name"
-      objects: "Object name"
+  karpaty_menu:
+    main_menu:
+      menu: "Menu"
+      search: "Search"
+      regions_guide: "Guide"
+      home: "Home"
+      rest_categories: "Rest categories"
+      regions: "Regions/Locations"
+      objects: "Objects"
+      events_calendar: "Events calendar"
+      events: "Events"
+      archive: "Events archive"
+      new_event: "Add event"
+      booking: "Booking"
+      apts_catalog: "Catalogue"
+      add_apts: "Add accommodation"
+      order: "Online booking"
+      categories: "Categories"
+      routes: "Regions"
+      about_us: "About Karpaty.UA"
+      contact_info: "Contacts"
+      about_advertising: "Advertising"
+      blog: "Blog"
+      morosha: "&mdash; project partner"
