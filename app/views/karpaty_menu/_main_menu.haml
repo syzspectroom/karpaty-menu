@@ -39,12 +39,13 @@
           / %a.main-menu__item{href: loc_url(ENV['BOOKING_DOMAIN_NAME'], '/houses#add-apartment'), data:{hover: t('.add_apts')}}= t('.add_apts')
           %a.main-menu__item{href: loc_url(ENV['BOOKING_DOMAIN_NAME'], '/categories'), class: menu_item_class(ENV['BOOKING_DOMAIN_NAME'], '/categories'), data:{hover: t('.categories')}}= t('.categories')
           %a.main-menu__item{href: loc_url(ENV['BOOKING_DOMAIN_NAME'], '/cities'), class: menu_item_class(ENV['BOOKING_DOMAIN_NAME'], '/cities'), data:{hover: t('.routes')}}= t('.routes')
-          %a.main-menu__item{href: "//#{ENV['ORDER_DOMAIN_NAME']}", class: menu_item_class(ENV['ORDER_DOMAIN_NAME'], '', true), data:{hover: t('.order')}}= t('.order')             
+          %a.main-menu__item{href: "//#{ENV['ORDER_DOMAIN_NAME']}", class: menu_item_class(ENV['ORDER_DOMAIN_NAME'], '', true), data:{hover: t('.order')}}= t('.order')
 
 
 
     .main-menu__useful
       %a.main-menu__useful-item{href: "//#{ENV['BLOG_DOMAIN_NAME']}", data:{hover: t('.blog')}}= t('.blog')
+      %a.main-menu__useful-item{href: loc_url(ENV['BOOKING_DOMAIN_NAME'], '/advertising'), class: menu_item_class(ENV['MAIN_DOMAIN_NAME'], '/advertising'), data:{hover: t('.about_advertising')}}= t('.about_advertising')
       %a.main-menu__useful-item{href: loc_url(ENV['BOOKING_DOMAIN_NAME'], '/about_us'), class: menu_item_class(ENV['MAIN_DOMAIN_NAME'], '/about_us'), data:{hover: t('.about_us')}}= t('.about_us')
       %a.main-menu__useful-item{href: loc_url(ENV['BOOKING_DOMAIN_NAME'], '/contacts'), class: menu_item_class(ENV['MAIN_DOMAIN_NAME'], '/contacts'), data:{hover: t('.contact_info')}}= t('.contact_info')
       - if ENV['SHOW_MOROSHA']
