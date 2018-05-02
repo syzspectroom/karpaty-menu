@@ -39,7 +39,7 @@
           / %a.main-menu__item{href: loc_url(ENV['BOOKING_DOMAIN_NAME'], '/houses#add-apartment'), data:{hover: t('.add_apts')}}= t('.add_apts')
           %a.main-menu__item{href: loc_url(ENV['BOOKING_DOMAIN_NAME'], '/categories'), class: menu_item_class(ENV['BOOKING_DOMAIN_NAME'], '/categories'), data:{hover: t('.categories')}}= t('.categories')
           %a.main-menu__item{href: loc_url(ENV['BOOKING_DOMAIN_NAME'], '/cities'), class: menu_item_class(ENV['BOOKING_DOMAIN_NAME'], '/cities'), data:{hover: t('.routes')}}= t('.routes')
-          %a.main-menu__item{href: "//#{ENV['ORDER_DOMAIN_NAME']}", class: menu_item_class(ENV['ORDER_DOMAIN_NAME'], '', true), data:{hover: t('.order')}}= t('.order')
+          -# %a.main-menu__item{href: "//#{ENV['ORDER_DOMAIN_NAME']}", class: menu_item_class(ENV['ORDER_DOMAIN_NAME'], '', true), data:{hover: t('.order')}}= t('.order')
 
 
 
